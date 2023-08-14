@@ -1,0 +1,44 @@
+# site settings
+title: 
+subtitle: Not Left ★ Not Right ★ Just Free
+email: youremailaddress@gmail.com
+description: And I'm running for the Board of Selectmen in Colchester, CT
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author: Jason LaChapelle
+street_address: 48 Highwood Circle
+city: Colchester
+state: CT
+zip_code: 06415
+country: United States of America
+phone:
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: 
+  GitLab:
+  Google-Plus: 
+  Instagram:
+  LinkedIn: 
+  Twitter: 
+  Facebook: https://www.facebook.com/LaChapelle4Colchester
+  Slack:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
