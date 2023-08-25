@@ -12,18 +12,41 @@
 		}
 	}
 
+	span.block {
+		padding: 0 5px;
+		background-color: _palette(highlight);
+		color: black;
+		font-style: italic;
+	}
+
 	header {
+		&.block {
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+      		max-width: 100%;
+			margin-bottom: _size(element-margin / 2);
+
+			> :first-child {
+				background-color: _palette(highlight);
+				color: black;
+				padding: 0 5px;				
+			}
+		}
+
 		&.major {
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
-      max-width: 100%;
+      		max-width: 100%;
 			margin-bottom: _size(element-margin);
 
 			> :first-child {
 				  margin-bottom: 0;
 				  width: calc(100% + 0.5em);
+				  color: _palette(highlight);
 
 				  &:after {
 					    content: '';
